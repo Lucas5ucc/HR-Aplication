@@ -16,9 +16,9 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 public class VagaController {
-
+    @Autowired
     private VagaRepository vagaRepository;
-
+    @Autowired
     private CandidateRepository candidateRepository;
 
 
