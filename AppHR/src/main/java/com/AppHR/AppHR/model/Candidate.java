@@ -9,7 +9,7 @@ public class Candidate {
     @GeneratedValue
     private long id;
     @Column(unique = true)
-    private String rg;
+    private String bi;
     @NotEmpty
     private String nameCandidate;
 
@@ -19,12 +19,12 @@ public class Candidate {
     @ManyToOne
     private Vaga vaga;
 
-    public String getRg() {
-        return rg;
+    public String getBi() {
+        return bi;
     }
 
-    public void setRg(String rg) {
-        this.rg = rg;
+    public void setBi(String bi) {
+        this.bi = bi;
     }
 
     public String getNameCandidate() {
